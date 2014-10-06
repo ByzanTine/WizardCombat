@@ -11,8 +11,11 @@ This README would normally document whatever steps are necessary to get your app
 ### How do I get set up? ###
 
 Clone the dev branch to setup the current project.
+
 Currently there are some issues when import. 
+
 Ignore the issue for now if Unity pop-up windows is suggest to fix it.
+
 Fork and create pull request to contribute.
 
 ### Contribution guidelines ###
