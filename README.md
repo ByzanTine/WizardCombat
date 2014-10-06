@@ -10,12 +10,10 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Clone the dev branch to setup the current project.
+Currently there are some issues when import. 
+Ignore the issue for now if Unity pop-up windows is suggest to fix it.
+Fork and create pull request to contribute.
 
 ### Contribution guidelines ###
 
