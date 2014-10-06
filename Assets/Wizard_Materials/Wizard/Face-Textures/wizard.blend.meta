@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: aaa09ae1a19292b429377464998e6a36
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cloak
+    100002: Face
+    100004: Hair
+    100006: Hat
+    100008: //RootNode
+    100010: Cube
+    100012: Torus
+    100014: Bones
+    100016: Collar
+    100018: Armature
+    100020: Bone
+    100022: Bone_L
+    100024: Bone_L_001
+    100026: Bone_L_002
+    100028: Bone_R
+    100030: Bone_R_001
+    100032: Bone_R_002
+    100034: Bone_001
+    100036: Bone_001_L
+    100038: Bone_001_L_001
+    100040: Bone_001_R
+    100042: Bone_001_R_001
+    100044: Arms
+    100046: Bone_L_003
+    100048: Bone_R_003
+    100050: ArmRig
+    100052: leftArm
+    100054: LeftLink
+    100056: LeftUpArm
+    100058: rightArm
+    100060: RightLink
+    100062: rightUpArm
+    100064: Energy
+    100066: Wand
+    100068: rightArm_003
+    100070: rightUpArm_R
+    100072: Cylinder
+    100074: Hand
+    100076: Lefthand
+    100078: RightHand
+    100080: leftArm_001
+    100082: rightArm_001
+    100084: rightArm_002
+    100086: leftHand
+    100088: rightHand
+    100090: Wand_0
+    100092: LeftHand
+    100094: Foot
+    100096: ShotSpawn
+    400000: cloak
+    400002: Face
+    400004: Hair
+    400006: Hat
+    400008: //RootNode
+    400010: Cube
+    400012: Torus
+    400014: Bones
+    400016: Collar
+    400018: Armature
+    400020: Bone
+    400022: Bone_L
+    400024: Bone_L_001
+    400026: Bone_L_002
+    400028: Bone_R
+    400030: Bone_R_001
+    400032: Bone_R_002
+    400034: Bone_001
+    400036: Bone_001_L
+    400038: Bone_001_L_001
+    400040: Bone_001_R
+    400042: Bone_001_R_001
+    400044: Arms
+    400046: Bone_L_003
+    400048: Bone_R_003
+    400050: ArmRig
+    400052: leftArm
+    400054: LeftLink
+    400056: LeftUpArm
+    400058: rightArm
+    400060: RightLink
+    400062: rightUpArm
+    400064: Energy
+    400066: Wand
+    400068: rightArm_003
+    400070: rightUpArm_R
+    400072: Cylinder
+    400074: Hand
+    400076: Lefthand
+    400078: RightHand
+    400080: leftArm_001
+    400082: rightArm_001
+    400084: rightArm_002
+    400086: leftHand
+    400088: rightHand
+    400090: Wand_0
+    400092: LeftHand
+    400094: Foot
+    400096: ShotSpawn
+    2300000: cloak
+    2300002: Face
+    2300004: Hair
+    2300006: Hat
+    2300008: Cube
+    2300010: Torus
+    2300012: Bones
+    2300014: Collar
+    2300016: Arms
+    2300018: Energy
+    2300020: Wand
+    2300022: Cylinder
+    2300024: Hand
+    2300026: Lefthand
+    2300028: RightHand
+    2300030: Foot
+    2300032: ShotSpawn
+    3300000: cloak
+    3300002: Face
+    3300004: Hair
+    3300006: Hat
+    3300008: Cube
+    3300010: Torus
+    3300012: Bones
+    3300014: Collar
+    3300016: Arms
+    3300018: Energy
+    3300020: Wand
+    3300022: Cylinder
+    3300024: Hand
+    3300026: Lefthand
+    3300028: RightHand
+    3300030: Foot
+    3300032: ShotSpawn
+    4300000: cloak
+    4300002: Hair
+    4300004: Face
+    4300006: Hat
+    4300008: Cube
+    4300010: Torus
+    4300012: Collar
+    4300014: Bones
+    4300016: Arms
+    4300018: Energy
+    4300020: Wand
+    4300022: Cylinder
+    4300024: Hand
+    4300026: RightHand
+    4300028: Lefthand
+    4300030: LeftHand
+    4300032: Foot
+    4300034: ShotSpawn
+    6400000: cloak
+    6400002: Collar
+    6400004: Face
+    6400006: Hair
+    6400008: Hat
+    7400000: Idle
+    7400002: TEstWave
+    7400004: ArmatureAction
+    7400006: WalkCycle
+    7400008: Attack1
+    7400010: Attack2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Bones
+    13700002: Arms
+    13700004: Energy
+    13700006: Wand
+    13700008: Lefthand
+    13700010: RightHand
+    13700012: LeftHand
+    13700014: cloak
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Attack1
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmRig
+        weight: 1
+      - path: ArmRig/Bone
+        weight: 1
+      - path: ArmRig/Bone/Bone_L
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm
+        weight: 1
+      - path: Arms
+        weight: 1
+      - path: cloak
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Hat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: WalkCycle
+      takeName: WalkCycle
+      firstFrame: 0
+      lastFrame: 78
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmRig
+        weight: 1
+      - path: ArmRig/Bone
+        weight: 1
+      - path: ArmRig/Bone/Bone_L
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm/leftHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand/Wand_0
+        weight: 1
+      - path: Arms
+        weight: 1
+      - path: cloak
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Energy
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: LeftHand
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: Wand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Attack2
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmRig
+        weight: 1
+      - path: ArmRig/Bone
+        weight: 1
+      - path: ArmRig/Bone/Bone_L
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm/leftHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand/Wand_0
+        weight: 1
+      - path: Arms
+        weight: 1
+      - path: cloak
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Energy
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: LeftHand
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: Wand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmRig
+        weight: 1
+      - path: ArmRig/Bone
+        weight: 1
+      - path: ArmRig/Bone/Bone_L
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_L/LeftLink/LeftUpArm/leftArm/leftHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand
+        weight: 1
+      - path: ArmRig/Bone/Bone_R/RightLink/rightUpArm/rightArm/rightHand/Wand_0
+        weight: 1
+      - path: Arms
+        weight: 1
+      - path: cloak
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Energy
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Hair
+        weight: 1
+      - path: Hat
+        weight: 1
+      - path: LeftHand
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: ShotSpawn
+        weight: 1
+      - path: Wand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
