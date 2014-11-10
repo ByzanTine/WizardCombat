@@ -13,6 +13,7 @@ public class AIWizard : Wizard {
 	private GameObject wall;
 
 	private NavMeshAgent navAgent;
+	private WizardAttackMeans attackmMeans;
 	// It depends how catious the AI is, for far around the magma
 	[Range(0,1)]
 	private float awayFactor = 0.8f;
@@ -24,6 +25,7 @@ public class AIWizard : Wizard {
 
 		wall = GameObject.FindGameObjectWithTag(TagList.Wall);
 		navAgent = gameObject.GetComponent<NavMeshAgent> ();
+		attackmMeans = gameObject.GetComponent<WizardAttackMeans> ();
 
 	}
 	void Update(){
@@ -101,7 +103,7 @@ public class AIWizard : Wizard {
 		// A FATAL BUG: the fireball will collide the detect collider
 		// Now move the detection collider into the child
 		Debug.Log("AI: Attack now!");
-
+		StartCoroutine(attackmMeans.Attack(target, WizardAttackMeans.AttackID.fireball));
 
 		//Stay for a while
 
