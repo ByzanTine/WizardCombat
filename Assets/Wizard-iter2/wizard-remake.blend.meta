@@ -103,6 +103,9 @@ ModelImporter:
     100194: Upper_Arm_R
     100196: Upper_Leg_L
     100198: Upper_Leg_R
+    100200: char_wand
+    100202: LowerArm_R_001
+    100204: Wand
     400000: //RootNode
     400002: char_base
     400004: char_boots
@@ -203,6 +206,9 @@ ModelImporter:
     400194: Upper_Arm_R
     400196: Upper_Leg_L
     400198: Upper_Leg_R
+    400200: char_wand
+    400202: LowerArm_R_001
+    400204: Wand
     2300000: //RootNode
     2300002: char_base
     2300004: char_boots
@@ -233,10 +239,12 @@ ModelImporter:
     4300014: char_shirt
     4300016: char_base
     4300018: eye
+    4300020: char_wand
     7400000: Default Take
     7400002: PoseLib
     7400004: WalkCycle
     7400006: Idle
+    7400008: Attack2
     9500000: //RootNode
     11100000: //RootNode
     13700000: char_boots
@@ -246,6 +254,7 @@ ModelImporter:
     13700008: char_head
     13700010: char_pants
     13700012: char_shirt
+    13700014: char_wand
   materials:
     importMaterials: 1
     materialName: 0
@@ -265,7 +274,7 @@ ModelImporter:
     - serializedVersion: 16
       name: WalkCycle
       takeName: WalkCycle
-      firstFrame: -1
+      firstFrame: 0
       lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
@@ -445,6 +454,104 @@ ModelImporter:
       - path: char_pants
         weight: 1
       - path: char_shirt
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Attack2
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/elbow_L
+        weight: 1
+      - path: Armature/elbow_R
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_L/Foot_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/FootIK_R/Foot_R
+        weight: 1
+      - path: Armature/Knee_L
+        weight: 1
+      - path: Armature/Knee_R
+        weight: 1
+      - path: Armature/stomach
+        weight: 1
+      - path: Armature/stomach/Chest
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_L
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_R
+        weight: 1
+      - path: Armature/stomach/Chest/Head
+        weight: 1
+      - path: Armature/stomach/Chest/Head/Head_001
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L/LowerArm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R/Wand
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R/LowerLeg_R
+        weight: 1
+      - path: char_boots
+        weight: 1
+      - path: char_cloak
+        weight: 1
+      - path: char_hand
+        weight: 1
+      - path: char_hat
+        weight: 1
+      - path: char_head
+        weight: 1
+      - path: char_pants
+        weight: 1
+      - path: char_shirt
+        weight: 1
+      - path: char_wand
         weight: 1
       - path: Empty
         weight: 1
