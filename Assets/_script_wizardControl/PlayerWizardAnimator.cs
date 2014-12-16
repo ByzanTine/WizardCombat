@@ -14,6 +14,11 @@ public class PlayerWizardAnimator : MonoBehaviour {
 	private NavMeshAgent navAgent;
 	private Wizard wizard;
 	private WizardAttackMeans attackmMeans;
+	void Awake()
+	{
+		Clicker.Instance.onClickLeft += OnClickLeft;
+	}
+
 	// Update is called once per frame
 	void Start (){
 		wizardAnimator = gameObject.GetComponentInChildren<Animator> ();
@@ -25,41 +30,34 @@ public class PlayerWizardAnimator : MonoBehaviour {
 	void Update (){
 
 		wizardAnimator.SetFloat ("Speed", navAgent.velocity.magnitude);
+
+	}
+
+	void OnClickLeft(Vector3 hitpoint)
+	{
 		if (!wizardAnimator.GetBool ("Attack") &&
-		    !wizardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack") &&
-		    Input.GetMouseButtonDown(0)) {
+		    !wizardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack")
+		    ) {
 			//This Part is extendable for variable attack ways
 			if (wizard.magicState == Wizard.WizardMagicState.fireBall){
 
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				//Use Raycast to find the point mouse clicked
-				if (Physics.Raycast (ray,out hit,Mathf.Infinity, collideLayer)) {
-					Debug.DrawLine(ray.origin, hit.point,Color.blue,10);
-					navAgent.SetDestination(
-						Vector3.Normalize(hit.point-transform.position)+transform.position
-						);
-				}
+				navAgent.SetDestination(
+					Vector3.Normalize(hitpoint-transform.position)+transform.position
+					);
 
-				StartCoroutine(attackmMeans.Attack(hit.point, WizardAttackMeans.AttackID.fireball));
+				
+				StartCoroutine(attackmMeans.Attack(hitpoint, WizardAttackMeans.AttackID.fireball));
 			}
 			else if(wizard.magicState == Wizard.WizardMagicState.meteor){
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				//Use Raycast to find the point mouse clicked
-				if (Physics.Raycast (ray,out hit,Mathf.Infinity, collideLayer)) {
-					Debug.DrawLine(ray.origin, hit.point,Color.yellow,10);
-					navAgent.SetDestination(
-						Vector3.Normalize(hit.point-transform.position)+transform.position
-						);
-				}
 
-				StartCoroutine(attackmMeans.Attack(hit.point, WizardAttackMeans.AttackID.meteor));
+				navAgent.SetDestination(
+					Vector3.Normalize(hitpoint-transform.position)+transform.position
+					);
+				
+				StartCoroutine(attackmMeans.Attack(hitpoint, WizardAttackMeans.AttackID.meteor));
 			}
-
+			
 		}
-
-
 	}
 
 
