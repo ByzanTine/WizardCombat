@@ -23,7 +23,7 @@ public class Clicker : MonoBehaviour {
 	// Handle our Ray and Hit
 	void Update () 
 	{
-		
+		// Mouse Rightbutton down
 		if (Input.GetMouseButtonDown(1))
 		{
 			// Ray
@@ -31,20 +31,17 @@ public class Clicker : MonoBehaviour {
 			
 			// Raycast Hit
 			RaycastHit hit;
-			Debug.DrawLine (camera.transform.position, Input.mousePosition);
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity, collideLayer))
 				OnClickRight(hit.point);// Notify of the event!
 
 		}
-
+		// Mouse LeftButton down
 		if (Input.GetMouseButtonDown(0))
 		{
 			// Ray
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			
 			// Raycast Hit
 			RaycastHit hit;
-			Debug.DrawLine (camera.transform.position, Input.mousePosition);
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity, collideLayer))
 				onClickLeft(hit.point);// Notify of the event!
 			

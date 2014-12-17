@@ -23,14 +23,4 @@ public class PlayerWizard : Wizard {
 
 	}
 
-	// Draw a online health bar
-	void OnGUI () {
-		// Make a background box
-		GUI.backgroundColor = Color.red;
-		GUI.Box (new Rect(5,5,45,35),"Health");
-		
-		GUI.Box (new Rect(60,10,health,20),"");
-		
-	}
-
 }
