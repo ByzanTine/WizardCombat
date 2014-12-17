@@ -5,26 +5,23 @@ public class MovableUnit : MonoBehaviour {
 	public Vector3 destination;
 	public GameObject explosion;
 	public bool isMoving = false;
-	public float speed = 2.0f;
+	public float speed = 5.0f;
 	// Use this for initialization
 	void Start () {
 	
 	}
 	
 	void FixedUpdate (){
-		if (isMoving) {
-			// Debug.Log((transform.position - destination).magnitude);
 
-			if ((transform.position - destination).magnitude < 1.0f){
-				isMoving = false;
-				// Cause Explosion Here
-				Instantiate(explosion, destination, Quaternion.identity);
-				Destroy(gameObject);
-			}
-			else {
-				transform.position = Vector3.Lerp(transform.position, destination, speed*Time.fixedDeltaTime);
-			}
+		// If the object is already there, explode
+
+		if ((transform.position - destination).magnitude < 1.0f){
+			isMoving = false;
+			// Cause Explosion Here
+			Instantiate(explosion, destination, Quaternion.identity);
+			Destroy(gameObject);
 		}
+
 
 
 	}
@@ -45,7 +42,9 @@ public class MovableUnit : MonoBehaviour {
 
 		this.destination = destination;
 		// destination.y = transform.position.y;
-		destination.y = 0.5f;
-		isMoving = true;
+		destination.y = 0.5f; // should be a little bit higher to separate from ground
+		Vector3 moveDirection = (destination - transform.position).normalized;
+		rigidbody.velocity = speed * moveDirection;
+
 	}
 }
