@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 9392b3350d7ba7a4b990b75cdfa2a9c8
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: char_base
+    100004: char_boots
+    100006: char_cloak
+    100008: char_hand
+    100010: char_hat
+    100012: char_head
+    100014: char_pants
+    100016: char_shirt
+    100018: Empty
+    100020: eye
+    100022: chest
+    100024: f_index_01_L
+    100026: f_index_01_R
+    100028: f_index_02_L
+    100030: f_index_02_R
+    100032: f_index_03_L
+    100034: f_index_03_R
+    100036: f_middle_01_L
+    100038: f_middle_01_R
+    100040: f_middle_02_L
+    100042: f_middle_02_R
+    100044: f_middle_03_L
+    100046: f_middle_03_R
+    100048: f_pinky_01_L
+    100050: f_pinky_01_R
+    100052: f_pinky_02_L
+    100054: f_pinky_02_R
+    100056: f_pinky_03_L
+    100058: f_pinky_03_R
+    100060: f_ring_01_L
+    100062: f_ring_01_R
+    100064: f_ring_02_L
+    100066: f_ring_02_R
+    100068: f_ring_03_L
+    100070: f_ring_03_R
+    100072: foot_L
+    100074: foot_R
+    100076: forearm_L
+    100078: forearm_R
+    100080: hand_L
+    100082: hand_R
+    100084: head
+    100086: heel_02_L
+    100088: heel_02_R
+    100090: heel_L
+    100092: heel_R
+    100094: hips
+    100096: metarig
+    100098: neck
+    100100: palm_01_L
+    100102: palm_01_R
+    100104: palm_02_L
+    100106: palm_02_R
+    100108: palm_03_L
+    100110: palm_03_R
+    100112: palm_04_L
+    100114: palm_04_R
+    100116: shin_L
+    100118: shin_R
+    100120: shoulder_L
+    100122: shoulder_R
+    100124: spine
+    100126: thigh_L
+    100128: thigh_R
+    100130: thumb_01_L
+    100132: thumb_01_R
+    100134: thumb_02_L
+    100136: thumb_02_R
+    100138: thumb_03_L
+    100140: thumb_03_R
+    100142: toe_L
+    100144: toe_R
+    100146: upper_arm_L
+    100148: upper_arm_R
+    100150: Armature
+    100152: Chest
+    100154: Chest_L
+    100156: Chest_R
+    100158: elbow_L
+    100160: elbow_R
+    100162: Foot_L
+    100164: Foot_R
+    100166: FootIK_L
+    100168: FootIK_R
+    100170: Head
+    100172: Head_001
+    100174: Knee_L
+    100176: Knee_R
+    100178: LowerArm_L
+    100180: LowerArm_R
+    100182: LowerLeg_L
+    100184: LowerLeg_R
+    100186: Shoulder_L
+    100188: Shoulder_R
+    100190: stomach
+    100192: Upper_Arm_L
+    100194: Upper_Arm_R
+    100196: Upper_Leg_L
+    100198: Upper_Leg_R
+    100200: char_wand
+    100202: LowerArm_R_001
+    100204: Wand
+    400000: //RootNode
+    400002: char_base
+    400004: char_boots
+    400006: char_cloak
+    400008: char_hand
+    400010: char_hat
+    400012: char_head
+    400014: char_pants
+    400016: char_shirt
+    400018: Empty
+    400020: eye
+    400022: chest
+    400024: f_index_01_L
+    400026: f_index_01_R
+    400028: f_index_02_L
+    400030: f_index_02_R
+    400032: f_index_03_L
+    400034: f_index_03_R
+    400036: f_middle_01_L
+    400038: f_middle_01_R
+    400040: f_middle_02_L
+    400042: f_middle_02_R
+    400044: f_middle_03_L
+    400046: f_middle_03_R
+    400048: f_pinky_01_L
+    400050: f_pinky_01_R
+    400052: f_pinky_02_L
+    400054: f_pinky_02_R
+    400056: f_pinky_03_L
+    400058: f_pinky_03_R
+    400060: f_ring_01_L
+    400062: f_ring_01_R
+    400064: f_ring_02_L
+    400066: f_ring_02_R
+    400068: f_ring_03_L
+    400070: f_ring_03_R
+    400072: foot_L
+    400074: foot_R
+    400076: forearm_L
+    400078: forearm_R
+    400080: hand_L
+    400082: hand_R
+    400084: head
+    400086: heel_02_L
+    400088: heel_02_R
+    400090: heel_L
+    400092: heel_R
+    400094: hips
+    400096: metarig
+    400098: neck
+    400100: palm_01_L
+    400102: palm_01_R
+    400104: palm_02_L
+    400106: palm_02_R
+    400108: palm_03_L
+    400110: palm_03_R
+    400112: palm_04_L
+    400114: palm_04_R
+    400116: shin_L
+    400118: shin_R
+    400120: shoulder_L
+    400122: shoulder_R
+    400124: spine
+    400126: thigh_L
+    400128: thigh_R
+    400130: thumb_01_L
+    400132: thumb_01_R
+    400134: thumb_02_L
+    400136: thumb_02_R
+    400138: thumb_03_L
+    400140: thumb_03_R
+    400142: toe_L
+    400144: toe_R
+    400146: upper_arm_L
+    400148: upper_arm_R
+    400150: Armature
+    400152: Chest
+    400154: Chest_L
+    400156: Chest_R
+    400158: elbow_L
+    400160: elbow_R
+    400162: Foot_L
+    400164: Foot_R
+    400166: FootIK_L
+    400168: FootIK_R
+    400170: Head
+    400172: Head_001
+    400174: Knee_L
+    400176: Knee_R
+    400178: LowerArm_L
+    400180: LowerArm_R
+    400182: LowerLeg_L
+    400184: LowerLeg_R
+    400186: Shoulder_L
+    400188: Shoulder_R
+    400190: stomach
+    400192: Upper_Arm_L
+    400194: Upper_Arm_R
+    400196: Upper_Leg_L
+    400198: Upper_Leg_R
+    400200: char_wand
+    400202: LowerArm_R_001
+    400204: Wand
+    2300000: //RootNode
+    2300002: char_base
+    2300004: char_boots
+    2300006: char_cloak
+    2300008: char_hand
+    2300010: char_hat
+    2300012: char_head
+    2300014: char_pants
+    2300016: char_shirt
+    2300018: eye
+    3300000: //RootNode
+    3300002: char_base
+    3300004: char_boots
+    3300006: char_cloak
+    3300008: char_hand
+    3300010: char_hat
+    3300012: char_head
+    3300014: char_pants
+    3300016: char_shirt
+    3300018: eye
+    4300000: Cube
+    4300002: char_hat
+    4300004: char_cloak
+    4300006: char_head
+    4300008: char_hand
+    4300010: char_boots
+    4300012: char_pants
+    4300014: char_shirt
+    4300016: char_base
+    4300018: eye
+    4300020: char_wand
+    7400000: Default Take
+    7400002: PoseLib
+    7400004: WalkCycle
+    7400006: Idle
+    7400008: Attack2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: char_boots
+    13700002: char_cloak
+    13700004: char_hand
+    13700006: char_hat
+    13700008: char_head
+    13700010: char_pants
+    13700012: char_shirt
+    13700014: char_wand
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkCycle
+      takeName: WalkCycle
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/elbow_L
+        weight: 1
+      - path: Armature/elbow_R
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_L/Foot_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/FootIK_R/Foot_R
+        weight: 1
+      - path: Armature/Knee_L
+        weight: 1
+      - path: Armature/Knee_R
+        weight: 1
+      - path: Armature/stomach
+        weight: 1
+      - path: Armature/stomach/Chest
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_L
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_R
+        weight: 1
+      - path: Armature/stomach/Chest/Head
+        weight: 1
+      - path: Armature/stomach/Chest/Head/Head_001
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L/LowerArm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R/LowerLeg_R
+        weight: 1
+      - path: char_boots
+        weight: 1
+      - path: char_cloak
+        weight: 1
+      - path: char_hand
+        weight: 1
+      - path: char_hat
+        weight: 1
+      - path: char_head
+        weight: 1
+      - path: char_pants
+        weight: 1
+      - path: char_shirt
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 12
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/elbow_L
+        weight: 1
+      - path: Armature/elbow_R
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_L/Foot_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/FootIK_R/Foot_R
+        weight: 1
+      - path: Armature/Knee_L
+        weight: 1
+      - path: Armature/Knee_R
+        weight: 1
+      - path: Armature/stomach
+        weight: 1
+      - path: Armature/stomach/Chest
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_L
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_R
+        weight: 1
+      - path: Armature/stomach/Chest/Head
+        weight: 1
+      - path: Armature/stomach/Chest/Head/Head_001
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L/LowerArm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R/LowerLeg_R
+        weight: 1
+      - path: char_boots
+        weight: 1
+      - path: char_cloak
+        weight: 1
+      - path: char_hand
+        weight: 1
+      - path: char_hat
+        weight: 1
+      - path: char_head
+        weight: 1
+      - path: char_pants
+        weight: 1
+      - path: char_shirt
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Attack2
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/elbow_L
+        weight: 1
+      - path: Armature/elbow_R
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_L/Foot_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/FootIK_R/Foot_R
+        weight: 1
+      - path: Armature/Knee_L
+        weight: 1
+      - path: Armature/Knee_R
+        weight: 1
+      - path: Armature/stomach
+        weight: 1
+      - path: Armature/stomach/Chest
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_L
+        weight: 1
+      - path: Armature/stomach/Chest/Chest_R
+        weight: 1
+      - path: Armature/stomach/Chest/Head
+        weight: 1
+      - path: Armature/stomach/Chest/Head/Head_001
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_L/Upper_Arm_L/LowerArm_L
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R
+        weight: 1
+      - path: Armature/stomach/Chest/Shoulder_R/Upper_Arm_R/LowerArm_R/Wand
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R
+        weight: 1
+      - path: Armature/stomach/Upper_Leg_R/LowerLeg_R
+        weight: 1
+      - path: char_boots
+        weight: 1
+      - path: char_cloak
+        weight: 1
+      - path: char_hand
+        weight: 1
+      - path: char_hat
+        weight: 1
+      - path: char_head
+        weight: 1
+      - path: char_pants
+        weight: 1
+      - path: char_shirt
+        weight: 1
+      - path: char_wand
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Armature
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
