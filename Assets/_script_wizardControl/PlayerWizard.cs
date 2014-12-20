@@ -11,6 +11,9 @@ public class PlayerWizard : Wizard {
 		if (Input.GetKeyDown (KeyCode.W)) {
 			magicState = WizardMagicState.meteor;
 		}
+		if (Input.GetKeyDown (KeyCode.R)) {
+			magicState = WizardMagicState.reflect;
+		}
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			magicState = WizardMagicState.idle;
 		}
