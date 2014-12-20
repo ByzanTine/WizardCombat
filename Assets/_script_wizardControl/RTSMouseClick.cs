@@ -18,9 +18,6 @@ public class RTSMouseClick : MonoBehaviour {
 	// The event that gets called
 	void OnClickRight(Vector3 hitpoint)
 	{
-		Debug.Log ("Event notified");
-
-
 		navAgent.SetDestination(hitpoint);
 	}
 

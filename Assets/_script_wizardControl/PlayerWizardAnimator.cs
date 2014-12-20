@@ -14,6 +14,7 @@ public class PlayerWizardAnimator : MonoBehaviour {
 	private NavMeshAgent navAgent;
 	private Wizard wizard;
 	private WizardAttackMeans attackmMeans;
+
 	void Awake()
 	{
 		Clicker.Instance.onClickLeft += OnClickLeft;
@@ -30,7 +31,14 @@ public class PlayerWizardAnimator : MonoBehaviour {
 	void Update (){
 
 		wizardAnimator.SetFloat ("Speed", navAgent.velocity.magnitude);
+		if (!wizardAnimator.GetBool ("Attack") &&
+		    !wizardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+		{
+			if (wizard.magicState == Wizard.WizardMagicState.reflect)
+			{
 
+			}
+		}
 	}
 
 	void OnClickLeft(Vector3 hitpoint)
@@ -42,10 +50,9 @@ public class PlayerWizardAnimator : MonoBehaviour {
 			if (wizard.magicState == Wizard.WizardMagicState.fireBall){
 
 				navAgent.SetDestination(
-					Vector3.Normalize(hitpoint-transform.position)+transform.position
+					Vector3.Normalize(hitpoint-transform.position) + transform.position
 					);
 
-				
 				StartCoroutine(attackmMeans.Attack(hitpoint, WizardAttackMeans.AttackID.fireball));
 			}
 			else if(wizard.magicState == Wizard.WizardMagicState.meteor){

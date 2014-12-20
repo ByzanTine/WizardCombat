@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class WizardAttackMeans : MonoBehaviour {
 	/*
@@ -8,34 +9,34 @@ public class WizardAttackMeans : MonoBehaviour {
 	public enum AttackID{
 		fireball,
 		meteor,
+		reflect
 	};
-	public string[] attackIDnames = {"fireball", "meteor"};
+	public string[] attackIDnames = {"fireball", "meteor", "reflect"};
 	// Use this for initialization
 	private Animator wizardAnimator;
-	private ShotSpawnController wc;
+	private MagicSpell magicSpell;
+	private List<MagicSpell> magicPool;
+
 	void Start () {
+		int enumSize = System.Enum.GetValues (typeof(AttackID)).Length;
+		Debug.Log ("INIT: Number of Spells a wizard can use: " + enumSize);
+		magicPool = new List<MagicSpell>{new FireballSpell(), new MeteorSpell(), new ReflectSpell()};
+
 		wizardAnimator = gameObject.GetComponentInChildren<Animator> ();
-		wc = gameObject.GetComponent<ShotSpawnController>();
-		int enumCount = System.Enum.GetValues (typeof(AttackID)).Length;
-
-		Debug.Log ("Total Methods of attack that wizard can Use: " + enumCount);
-
-		if (wc.shotSpawn.Length != wc.shot.Length 
-		    || wc.shot.Length != enumCount ){
-			Debug.LogError("Attack Methods does not match the shot spawn");
-		
-		}
 	}
 	
 	public IEnumerator Attack(Vector3 to, AttackID id){
 		wizardAnimator.SetBool ("Attack", true);
 		yield return new WaitForSeconds (1.0f);
 
+		magicSpell = magicPool[(int)id];
 
-		wc.ShotByID(to, (int)id);
+		StartCoroutine (magicSpell.castMagic (gameObject, to));
+
 		Debug.Log ("Attack using " + attackIDnames[(int)id]);
 
 
 		wizardAnimator.SetBool ("Attack", false);
 	}
+
 }
