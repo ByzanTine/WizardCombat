@@ -4,13 +4,22 @@ using System.Collections;
 public class ColliderDelay : MonoBehaviour {
 
 	// Use this for initialization
+	private Collider[] colliders;
 	void Start () {
-		gameObject.GetComponent<Collider> ().enabled = false;
+
+		colliders = gameObject.GetComponents<Collider> ();
+		foreach (Collider col in colliders)
+		{
+			col.enabled = false;
+		}
 		Invoke ("EnableCollider", 0.1f);//enable afte a second
 	}
 	
 	// Update is called once per frame
 	void EnableCollider () {
-		gameObject.GetComponent<Collider> ().enabled = true;
+		foreach (Collider col in colliders)
+		{
+			col.enabled = true;
+		}
 	}
 }

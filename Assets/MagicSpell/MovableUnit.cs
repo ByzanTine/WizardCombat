@@ -23,7 +23,7 @@ public class MovableUnit : MonoBehaviour {
 		}
 
 		// Reflect if speed change 
-
+		// change the orientation for effect glitches
 		if ((rigidbody.velocity - curSpeed).magnitude > 0.1f)
 		{
 			// Debug.Log("Rotate Angle: " + Vector3.Angle(curSpeed, rigidbody.velocity));
@@ -31,6 +31,7 @@ public class MovableUnit : MonoBehaviour {
 			Vector3 cross = Vector3.Cross(curSpeed, rigidbody.velocity);
 			if (cross.y < 0) angle = -angle;
 			transform.Rotate(new Vector3 (0, angle, 0));
+
 			rigidbody.velocity = rigidbody.velocity.normalized * speed; // enfore a constant speed 
 			curSpeed = rigidbody.velocity;  
 
@@ -42,7 +43,7 @@ public class MovableUnit : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == TagList.Player
-		    || other.gameObject.tag == "Obstacle"){
+		    || other.gameObject.tag == TagList.Fireball){
 			isMoving = false;
 			// Cause Explosion Here
 			Debug.Log ("Knocked On other, explode now");

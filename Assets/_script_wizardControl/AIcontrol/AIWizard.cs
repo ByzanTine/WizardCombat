@@ -103,7 +103,7 @@ public class AIWizard : Wizard {
 		// A FATAL BUG: the fireball will collide the detect collider
 		// Now move the detection collider into the child
 		Debug.Log("AI: Attack now!");
-		StartCoroutine(attackmMeans.Attack(target, WizardAttackMeans.AttackID.fireball));
+		// StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.fireball, target));
 
 		//Stay for a while
 
