@@ -31,12 +31,14 @@ public class PlayerWizardAnimator : MonoBehaviour {
 	void Update (){
 
 		wizardAnimator.SetFloat ("Speed", navAgent.velocity.magnitude);
+
 		if (!wizardAnimator.GetBool ("Attack") &&
 		    !wizardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
 		{
 			if (wizard.magicState == Wizard.WizardMagicState.reflect)
 			{
-
+				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.reflect));
+				wizard.magicState = Wizard.WizardMagicState.idle;
 			}
 		}
 	}
@@ -53,7 +55,7 @@ public class PlayerWizardAnimator : MonoBehaviour {
 					Vector3.Normalize(hitpoint-transform.position) + transform.position
 					);
 
-				StartCoroutine(attackmMeans.Attack(hitpoint, WizardAttackMeans.AttackID.fireball));
+				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.fireball, hitpoint));
 			}
 			else if(wizard.magicState == Wizard.WizardMagicState.meteor){
 
@@ -61,7 +63,7 @@ public class PlayerWizardAnimator : MonoBehaviour {
 					Vector3.Normalize(hitpoint-transform.position)+transform.position
 					);
 				
-				StartCoroutine(attackmMeans.Attack(hitpoint, WizardAttackMeans.AttackID.meteor));
+				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.meteor, hitpoint));
 			}
 			
 		}

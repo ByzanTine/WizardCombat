@@ -12,8 +12,9 @@ public class WizardCursorEffect : MonoBehaviour {
 
 	}
 	void OnGUI(){
+		int textureIndex = (int)wizard.magicState <= 2 ? (int)wizard.magicState : 0;
 
-		Cursor.SetCursor(cursorTexture[(int)wizard.magicState], Vector2.zero, CursorMode.Auto);
+		Cursor.SetCursor(cursorTexture[textureIndex], Vector2.zero, CursorMode.Auto);
 
 	}
 }

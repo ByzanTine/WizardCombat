@@ -26,7 +26,7 @@ public class AIWizardAnimator : MonoBehaviour {
 		    !wizardAnimator.GetCurrentAnimatorStateInfo(0).IsName("Attack")
 		    && wizard.aiState == AIWizard.AIWizardstate.Attack){
 
-			StartCoroutine(attackmMeans.Attack(wizard.target, WizardAttackMeans.AttackID.fireball)); 
+			StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.fireball, wizard.target)); 
 		}
 		
 		
