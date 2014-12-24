@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
-// Cartoon FX  - (c) 2013, Jean Moreno
-
-// CFX Spawn System Editor interface
 
 [CustomEditor(typeof(CFX_SpawnSystem))]
 public class CFX_SpawnSystemEditor : Editor

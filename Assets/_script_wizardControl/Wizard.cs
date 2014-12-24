@@ -11,6 +11,7 @@ public class Wizard : MonoBehaviour {
 	public enum WizardMagicState{
 		idle,
 		fireBall,
+		iceBall,
 		meteor,
 		reflect
 	};

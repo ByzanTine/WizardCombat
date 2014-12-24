@@ -13,7 +13,7 @@ public class WizardAttackMeans : MonoBehaviour {
 	void Start () {
 		int enumSize = System.Enum.GetValues (typeof(SpellDB.AttackID)).Length;
 		Debug.Log ("INIT: Number of Spells a wizard can use: " + enumSize);
-		magicPool = new List<MagicSpell>{new FireballSpell(), new MeteorSpell(), new ReflectSpell()};
+		magicPool = new List<MagicSpell>{new FireballSpell(), new IceBallSpell(), new MeteorSpell(), new ReflectSpell()};
 
 		wizardAnimator = gameObject.GetComponentInChildren<Animator> ();
 	}

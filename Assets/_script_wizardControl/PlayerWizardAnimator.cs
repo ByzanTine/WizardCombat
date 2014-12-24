@@ -57,6 +57,14 @@ public class PlayerWizardAnimator : MonoBehaviour {
 
 				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.fireball, hitpoint));
 			}
+			else if(wizard.magicState == Wizard.WizardMagicState.iceBall){
+				
+				navAgent.SetDestination(
+					Vector3.Normalize(hitpoint-transform.position)+transform.position
+					);
+				
+				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.iceball, hitpoint));
+			}
 			else if(wizard.magicState == Wizard.WizardMagicState.meteor){
 
 				navAgent.SetDestination(
@@ -65,6 +73,7 @@ public class PlayerWizardAnimator : MonoBehaviour {
 				
 				StartCoroutine(attackmMeans.Attack(SpellDB.AttackID.meteor, hitpoint));
 			}
+
 			
 		}
 	}
