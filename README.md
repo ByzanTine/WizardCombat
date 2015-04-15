@@ -1,4 +1,6 @@
-# WizardCombat #
+# -Deprecated-  #
+This repo is no longer maintained for furture development. Please refer to another active developing repo [Kool](https://github.com/ByzanTine/Kool) for furthur investigation. Don't wait to ask the author if you got any problems. 
+# WizardCombat # 
 
 This README will provide a brief introduction about the project and how to contribute. 
 
